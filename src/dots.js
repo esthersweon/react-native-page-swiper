@@ -32,6 +32,7 @@ export default class Dots extends Component {
             <Dot
               key={ i }
               color={ i === active ? this.props.activeColor : this.props.color }
+              inactiveBorder={ this.props.inactiveBorder }
             />
           )
         })}

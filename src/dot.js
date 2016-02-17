@@ -27,6 +27,8 @@ export default class Dot extends Component {
           width: diameter,
           height: diameter,
           borderRadius: diameter / 2,
+          borderWidth: 1, 
+          borderColor: this.props.inactiveBorder,
           marginLeft: 3,
           marginRight: 3,
           marginTop: 3,

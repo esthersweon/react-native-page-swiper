@@ -17,7 +17,8 @@ export default class Swiper extends Component {
     pager: React.PropTypes.bool,
     onPageChange: React.PropTypes.func,
     activeDotColor: React.PropTypes.string,
-    inactiveDotColor: React.PropTypes.string
+    inactiveDotColor: React.PropTypes.string,
+    inactiveBorder: React.PropTypes.string
   }
 
   static defaultProps = {
@@ -25,7 +26,8 @@ export default class Swiper extends Component {
     pager: true,
     onPageChange: () => {},
     activeDotColor: 'blue',
-    inactiveDotColor: 'lightgray'
+    inactiveDotColor: 'lightgray',
+    inactiveBorder: 'white'
   }
 
   constructor(props) {
@@ -125,6 +127,7 @@ export default class Swiper extends Component {
         <Dots
           active={ this.state.index }
           color={ this.props.inactiveDotColor }
+          inactiveBorder={ this.props.inactiveBorder }
           activeColor={ this.props.activeDotColor }
           total={ this.props.children.length }
           style={{ position: 'absolute', bottom: 50, width: this.state.viewWidth }}

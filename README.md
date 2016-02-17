@@ -103,7 +103,8 @@ AppRegistry.registerComponent('swiper', () => swiper)
 | index | `0` | `number` | Index number of initial slide. |
 | pager | `true` | `boolean` | Show pager. |
 | onPageChange |  | `function` | Callback when page changes. |
-| inactiveDotColor | `transparent` | `string` | CSS color of the inactive dots. |
+| inactiveDotColor | `lightgray` | `string` | CSS color of the inactive dots. |
+| inactiveBorder | `white` | `string` | CSS color of the inactive dots' border. |
 | activeDotColor | `blue` | `string` | CSS color of the dot for the current page. |
 
 
@@ -113,7 +114,7 @@ See code in [examples](https://github.com/esthersweon/react-native-page-swiper-f
 
 ## Questions
 
-Feel free to [contact us](mailto:code@fixt.co) or [create an issue](https://github.com/fixt/react-native-page-swiper-fork/issues/new)
+Feel free to [contact us](mailto:code@fixt.co) or [create an issue](https://github.com/fixt/react-native-page-swiper/issues/new)
 
 > Inspired by [leecade/react-native-swiper](https://github.com/leecade/react-native-swiper/) & [brentvatne/react-native-scrollable-tab-view](https://github.com/brentvatne/react-native-scrollable-tab-view).
 
