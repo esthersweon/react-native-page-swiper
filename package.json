@@ -1,5 +1,5 @@
 {
-  "name": "react-native-page-swiper",
+  "name": "react-native-page-swiper-fork",
   "keywords": [
     "react",
     "react-component",
@@ -8,23 +8,23 @@
     "ios",
     "android"
   ],
-  "version": "0.0.2",
-  "description": "Page Swiper component for React Native.",
+  "version": "0.0.0",
+  "description": "Page Swiper component for React Native forked from https://github.com/fixt/react-native-page-swiper.git. that allows customization of inactive dot color",
   "main": "lib/index.js",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
-    "build": "./node_modules/.bin/babel src -d lib -q",
+    "build": "babel src -d lib -q",
     "lint": "eslint src",
     "prebuild": "npm run lint",
     "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fixt/react-native-page-swiper.git"
+    "url": "git+https://github.com/esthersweon/react-native-page-swiper.git"
   },
-  "author": "Christopher Garvis <cgarvis@gmail.com>",
+  "author": "Esther Weon <esther.s.weon@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fixt/react-native-page-swiper/issues"
@@ -39,5 +39,8 @@
     "eslint": "^1.9.0",
     "eslint-plugin-react": "^3.9.0",
     "react-native": "0.14.2"
+  },
+  "directories": {
+    "example": "examples"
   }
 }
