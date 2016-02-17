@@ -8,7 +8,7 @@
     "ios",
     "android"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Page Swiper component for React Native forked from https://github.com/fixt/react-native-page-swiper.git. that allows customization of inactive dot color",
   "main": "lib/index.js",
   "engines": {
@@ -27,9 +27,9 @@
   "author": "Esther Weon <esther.s.weon@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fixt/react-native-page-swiper/issues"
+    "url": "https://github.com/esthersweon/react-native-page-swiper/issues"
   },
-  "homepage": "https://github.com/fixt/react-native-page-swiper#readme",
+  "homepage": "https://github.com/esthersweon/react-native-page-swiper#readme",
   "devDependencies": {
     "babel-core": "^6.1.21",
     "babel-eslint": "^4.1.5",
