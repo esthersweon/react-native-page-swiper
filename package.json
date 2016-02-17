@@ -8,7 +8,7 @@
     "ios",
     "android"
   ],
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Page Swiper component for React Native forked from https://github.com/fixt/react-native-page-swiper.git. that allows customization of inactive dot color",
   "main": "lib/index.js",
   "engines": {
@@ -42,5 +42,6 @@
   },
   "directories": {
     "example": "examples"
-  }
+  },
+  "dependencies": {}
 }

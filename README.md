@@ -1,4 +1,4 @@
-# react-native-page-swiper
+# react-native-page-swiper-fork
 
 Page Swiper component for React Native.
 
@@ -13,7 +13,7 @@ Page Swiper component for React Native.
 ### Installation
 
 ```bash
-$ npm i react-native-page-swiper --save
+$ npm i react-native-page-swiper-fork --save
 ```
 
 ### Basic Usage
@@ -33,9 +33,9 @@ $ react-native init myproject
 - Then, edit `myproject/index.ios.js`, like this:
 
 ```jsx
-var Swiper = require('react-native-page-swiper')
+var Swiper = require('react-native-page-swiper-fork')
 // es6
-// import Swiper from 'react-native-page-swiper'
+// import Swiper from 'react-native-page-swiper-fork'
 
 var React = require('react-native');
 var {
@@ -103,15 +103,18 @@ AppRegistry.registerComponent('swiper', () => swiper)
 | index | `0` | `number` | Index number of initial slide. |
 | pager | `true` | `boolean` | Show pager. |
 | onPageChange |  | `function` | Callback when page changes. |
+| inactiveDotColor | `transparent` | `string` | CSS color of the inactive dots. |
 | activeDotColor | `blue` | `string` | CSS color of the dot for the current page. |
 
 
 ### Examples
 
-See code in [examples](https://github.com/fixt/react-native-page-swiper/tree/master/examples/swiper).
+See code in [examples](https://github.com/esthersweon/react-native-page-swiper-fork/tree/master/examples/swiper).
 
 ## Questions
 
-Feel free to [contact us](mailto:code@fixt.co) or [create an issue](https://github.com/fixt/react-native-page-swiper/issues/new)
+Feel free to [contact us](mailto:code@fixt.co) or [create an issue](https://github.com/fixt/react-native-page-swiper-fork/issues/new)
 
 > Inspired by [leecade/react-native-swiper](https://github.com/leecade/react-native-swiper/) & [brentvatne/react-native-scrollable-tab-view](https://github.com/brentvatne/react-native-scrollable-tab-view).
+
+> Forked from [fixt/react-native-page-swiper](https://github.com/fixt/react-native-page-swiper/)
