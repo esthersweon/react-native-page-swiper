@@ -18,7 +18,8 @@ export default class Swiper extends Component {
     onPageChange: React.PropTypes.func,
     activeDotColor: React.PropTypes.string,
     inactiveDotColor: React.PropTypes.string,
-    inactiveBorder: React.PropTypes.string
+    inactiveBorder: React.PropTypes.string,
+    dotsPosition: React.PropTypes.string
   }
 
   static defaultProps = {
@@ -27,7 +28,8 @@ export default class Swiper extends Component {
     onPageChange: () => {},
     activeDotColor: 'blue',
     inactiveDotColor: 'lightgray',
-    inactiveBorder: 'white'
+    inactiveBorder: 'white', 
+    dotsPosition: 'bottom'
   }
 
   constructor(props) {
@@ -114,6 +116,10 @@ export default class Swiper extends Component {
       flexDirection: 'row',
     }
 
+    const dotsStyle = this.props.dotsPosition === 'bottom' 
+      ? { position: 'absolute', bottom: 50, width: this.state.viewWidth }
+      : { position: 'absolute', top: 50, width: this.state.viewWidth };
+
     return (
       <View style={{flex: 1}} onLayout={this.handleLayout.bind(this)}>
         <Animated.View
@@ -130,7 +136,7 @@ export default class Swiper extends Component {
           inactiveBorder={ this.props.inactiveBorder }
           activeColor={ this.props.activeDotColor }
           total={ this.props.children.length }
-          style={{ position: 'absolute', bottom: 50, width: this.state.viewWidth }}
+          style={ dotsStyle }
         />}
       </View>
     )
