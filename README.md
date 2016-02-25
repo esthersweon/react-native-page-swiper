@@ -106,6 +106,7 @@ AppRegistry.registerComponent('swiper', () => swiper)
 | inactiveDotColor | `lightgray` | `string` | CSS color of the inactive dots. |
 | inactiveBorder | `white` | `string` | CSS color of the inactive dots' border. |
 | activeDotColor | `blue` | `string` | CSS color of the dot for the current page. |
+| dotsPosition | `bottom` | `string` | Can be `top` or `bottom` - positioning of dots on slide. |
 
 
 ### Examples
